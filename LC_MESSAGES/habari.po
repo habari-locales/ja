@@ -1,20 +1,21 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: habari\n"
+"Project-Id-Version: Habari\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-04 00:00+0000\n"
-"PO-Revision-Date: 2011-11-28 10:52+0000\n"
-"Last-Translator: ayunyan <ayu@commun.jp>\n"
-"Language-Team: ayunyan <ayu@commun.jp>\n"
+"POT-Creation-Date: 2012-12-02 00:00+0000\n"
+"PO-Revision-Date: 2013-02-25 17:20+0000\n"
+"Last-Translator: Matt Read <matt@mattread.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2012-11-05 04:33+0000\n"
-"X-Generator: Launchpad (build 16232)\n"
-"X-Poedit-Country: JAPAN\n"
-"X-Poedit-Language: Japanese\n"
-"X-Poedit-SourceCharset: utf-8\n"
 
 #: classes/vocabulary.php:222
 #, php-format
@@ -26,12 +27,18 @@ msgstr "新語彙 %1$s (%2$s)"
 msgid "Vocabulary %1$s (%2$s) deleted."
 msgstr "語彙 %1$s (%2$s) 削除しました。"
 
-#: classes/vocabulary.php:840
+#: classes/vocabulary.php:842
+#, php-format
+msgid ""
+"Not all posts tagged \"%1$s\" could be reassigned to \"%2$s\". They have "
+"been left alone."
+msgstr ""
+
+#: classes/vocabulary.php:848
 #, php-format
 msgid "Term %1$s in the %2$s vocabulary has been renamed to %3$s."
 msgid_plural "Terms %1$s in the %2$s vocabulary have been renamed to %3$s."
 msgstr[0] ""
-msgstr[1] ""
 
 #: classes/url.php:219
 #, php-format
@@ -71,8 +78,8 @@ msgstr ""
 #: classes/plugins.php:504
 #, php-format
 msgid ""
-"The class \"%s\" is not a Plugin, but was queued to load as a plugin. It may "
-"not currently be active."
+"The class \"%s\" is not a Plugin, but was queued to load as a plugin. It may"
+" not currently be active."
 msgstr ""
 
 #: classes/plugins.php:592
@@ -90,8 +97,7 @@ msgstr "プラグインを無効化しました: %s"
 msgid ""
 "Attempted to load the plugin file \"%s\", but it failed with syntax errors. "
 "<div class=\"reveal\">%s</div>"
-msgstr ""
-"プラグインファイル \"%s\"をロードしましたが書式エラーのため失敗しました。<div class=\"reveal\">%s</div>"
+msgstr "プラグインファイル \"%s\"をロードしましたが書式エラーのため失敗しました。<div class=\"reveal\">%s</div>"
 
 #: classes/memcachecache.php:36 classes/memcachecache.php:37
 msgid "The Memcache PHP module is not loaded - the cache is disabled."
@@ -189,7 +195,8 @@ msgstr ""
 msgid "Bitmask can have a maximum of PHP_INT_MAX >> 1 flags"
 msgstr ""
 
-#. @locale Habari tried to create a new Bitmask object with invalid values in the second argument
+#. @locale Habari tried to create a new Bitmask object with invalid values in
+#. the second argument
 #: classes/bitmask.php:56
 msgid ""
 "Bitmask constructor second argument must either be an integer within the "
@@ -238,7 +245,8 @@ msgstr "完全"
 msgid "none"
 msgstr "なし"
 
-#. @locale Signifies the plugin or theme is missing needed information to check for an update
+#. @locale Signifies the plugin or theme is missing needed information to
+#. check for an update
 #: classes/update.php:41
 #, php-format
 msgid ""
@@ -260,8 +268,7 @@ msgid "Updates check CronJob failed!"
 msgstr ""
 
 #: classes/update.php:284
-msgid ""
-"Perform a single check for plugin updates, the plugin set has changed."
+msgid "Perform a single check for plugin updates, the plugin set has changed."
 msgstr ""
 
 #: classes/term.php:151
@@ -297,10 +304,7 @@ msgid ""
 "The cache directory '%s' is not writable - the cache is disabled. The user, "
 "or group, which your web server is running as, needs to have read, write, "
 "and execute permissions on this directory."
-msgstr ""
-"キャッシュディレクトリ "
-"'%s'に書き込み出来ないためキャッシュは無効化されています。Webサーバを実行しているユーザまたはグループの権限でキャッシュディレクトリに読み込み、書き"
-"込み、実行が出来るようにパーミッションを変更してください。"
+msgstr "キャッシュディレクトリ '%s'に書き込み出来ないためキャッシュは無効化されています。Webサーバを実行しているユーザまたはグループの権限でキャッシュディレクトリに読み込み、書き込み、実行が出来るようにパーミッションを変更してください。"
 
 #: classes/filecache.php:40
 #, php-format
@@ -428,8 +432,10 @@ msgstr ""
 msgid "spam"
 msgstr ""
 
-#: classes/pluggable.php:248 classes/plugin.php:62
-#: handlers/adminpluginshandler.php:57 handlers/adminpluginshandler.php:107
+#. @locale Displayed as an icon indicating there is help text available for a
+#. plugin.
+#: classes/pluggable.php:248 classes/plugin.php:63
+#: handlers/adminpluginshandler.php:58 handlers/adminpluginshandler.php:109
 msgid "?"
 msgstr "?"
 
@@ -452,8 +458,8 @@ msgstr "Whoops! 404. アクセスしようとしたページは見つかりま�
 #: classes/theme.php:673
 #, php-format
 msgid ""
-"Content could not be displayed. One of the following templates - %s - has to "
-"be present in the active theme."
+"Content could not be displayed. One of the following templates - %s - has to"
+" be present in the active theme."
 msgstr ""
 
 #: classes/theme.php:831
@@ -540,8 +546,16 @@ msgstr ""
 msgid "CronJob %s is not scheduled to run again and is being deleted."
 msgstr ""
 
-#: classes/format.php:259 classes/format.php:294 themes/charcoal/footer.php:12
-#: admin/plugin.php:42 admin/themes.php:15 admin/themes.php:123
+#. @locale The default string used between the last two items in a series
+#. (one, two, three *and* four).
+#. @locale The default string used between the last two items in a series of
+#. tags (one, two, three *and* four).
+#. @locale The string used between the last two items in the list of authors
+#. of a plugin on the admin page (one, two, three *and* four).
+#. @locale The string used between the last two items in the list of authors
+#. of a theme on the admin page (one, two, three *and* four).
+#: classes/format.php:262 classes/format.php:298 admin/plugin.php:43
+#: admin/themes.php:16 admin/themes.php:125
 msgid " and "
 msgstr " と "
 
@@ -556,7 +570,7 @@ msgstr ""
 
 #: classes/post.php:274 classes/post.php:951 classes/acl.php:780
 #: classes/acl.php:781 classes/acl.php:782 classes/acl.php:784
-#: handlers/installhandler.php:1732
+#: handlers/installhandler.php:1734
 msgid "Content"
 msgstr "コンテンツ"
 
@@ -597,7 +611,7 @@ msgid "Tags, separated by, commas"
 msgstr "タグ(カンマ区切り)"
 
 #: classes/post.php:979 handlers/admincommentshandler.php:73
-#: admin/themes.php:31
+#: admin/themes.php:32
 msgid "Settings"
 msgstr "設定"
 
@@ -628,7 +642,7 @@ msgstr "コンテンツアドレス"
 #: classes/post.php:1019 plugins/undelete/undelete.plugin.php:181
 #: plugins/flickrsilo/flickrsilo.plugin.php:876
 #: handlers/adminthemeshandler.php:154 themes/charcoal/theme.php:66
-#: admin/themes.php:89
+#: admin/themes.php:90
 msgid "Save"
 msgstr "保存"
 
@@ -1048,7 +1062,7 @@ msgstr ""
 msgid "Add, remove, and edit users"
 msgstr ""
 
-#: classes/acl.php:774 handlers/installhandler.php:1627
+#: classes/acl.php:774 handlers/installhandler.php:1629
 msgid "Edit own profile"
 msgstr "自分のプロフィールを編集"
 
@@ -1060,11 +1074,11 @@ msgstr "グループと許可を管理する"
 msgid "Manage logs"
 msgstr "ログの管理"
 
-#: classes/acl.php:777 handlers/installhandler.php:1632
+#: classes/acl.php:777 handlers/installhandler.php:1634
 msgid "Manage dashboard modules"
 msgstr "ダッシュボードのモジュールの管理"
 
-#: classes/acl.php:780 handlers/installhandler.php:1578
+#: classes/acl.php:780 handlers/installhandler.php:1580
 msgid "Permissions on one's own posts"
 msgstr ""
 
@@ -1072,7 +1086,7 @@ msgstr ""
 msgid "Permissions to all posts"
 msgstr ""
 
-#: classes/acl.php:782 handlers/installhandler.php:1732
+#: classes/acl.php:782 handlers/installhandler.php:1734
 msgid "Permissions to other users' unpublished posts"
 msgstr ""
 
@@ -1088,8 +1102,8 @@ msgstr "アドミニストレーター"
 msgid "anonymous"
 msgstr "匿名"
 
-#: classes/acl.php:841 classes/acl.php:843 handlers/installhandler.php:1589
-#: handlers/installhandler.php:1591
+#: classes/acl.php:841 classes/acl.php:843 handlers/installhandler.php:1591
+#: handlers/installhandler.php:1593
 msgid "authenticated"
 msgstr ""
 
@@ -1140,7 +1154,8 @@ msgstr "警告"
 msgid "Parse Error"
 msgstr "構文解析エラー"
 
-#. @locale PHP encountered something at runtime that could be an error or intended
+#. @locale PHP encountered something at runtime that could be an error or
+#. intended
 #: classes/error.php:122
 msgid "Notice"
 msgstr "注意"
@@ -1165,37 +1180,44 @@ msgstr "コンパイルエラー"
 msgid "Compile Warning"
 msgstr "コンパイル警告"
 
-#. @locale A fatal error generated by Habari or an addon. Code execution is stopped.
+#. @locale A fatal error generated by Habari or an addon. Code execution is
+#. stopped.
 #: classes/error.php:132
 msgid "User Error"
 msgstr "ユーザーエラー"
 
-#. @locale A non-fatal error generated by Habari or an addon. Code execution is not stopped.
+#. @locale A non-fatal error generated by Habari or an addon. Code execution
+#. is not stopped.
 #: classes/error.php:134
 msgid "User Warning"
 msgstr "ユーザー警告"
 
-#. @locale PHP encountered something generated by Habari or an addon at runtime that could be an error or intended
+#. @locale PHP encountered something generated by Habari or an addon at
+#. runtime that could be an error or intended
 #: classes/error.php:136
 msgid "User Notice"
 msgstr "ユーザー注意"
 
-#. @locale A suggestion from PHP that the code may need updated for interoperability or forward compatibility
+#. @locale A suggestion from PHP that the code may need updated for
+#. interoperability or forward compatibility
 #: classes/error.php:138
 msgid "Strict Notice"
 msgstr ""
 
-#. @locale A fatal PHP error at runtime. An error handler may be able to work around it. If not, code execution stops.
+#. @locale A fatal PHP error at runtime. An error handler may be able to work
+#. around it. If not, code execution stops.
 #: classes/error.php:140
 msgid "Recoverable Error"
 msgstr ""
 
-#. @locale A notification from PHP that the code is outdated and may not work in the future
+#. @locale A notification from PHP that the code is outdated and may not work
+#. in the future
 #: classes/error.php:144
 msgid "Deprecated violation"
 msgstr "廃止機能違反"
 
-#. @locale A notification that the code is outdated and Habari may not work with it in the future
+#. @locale A notification that the code is outdated and Habari may not work
+#. with it in the future
 #: classes/error.php:146
 msgid "User deprecated violation"
 msgstr "ユーザー廃止機能違反"
@@ -1205,16 +1227,13 @@ msgstr "ユーザー廃止機能違反"
 msgid " &hellip;%d arg&hellip; "
 msgid_plural " &hellip;%d args&hellip; "
 msgstr[0] ""
-msgstr[1] ""
 
 #: classes/error.php:233
 #, php-format
 msgid ""
 "%s line %d:\n"
 "  %s(%s)\n"
-msgstr ""
-"%s %d行目:\n"
-"  %s(%s)\n"
+msgstr "%s %d行目:\n  %s(%s)\n"
 
 #: classes/curlrequestprocessor.php:93
 msgid "CURL Error. Unable to create temporary file name."
@@ -1229,250 +1248,250 @@ msgstr "CURLエラー：一時ファイルを開けませんでした。"
 msgid "CURL Error %1$d: %2$s"
 msgstr "CURLエラー %1$d: %2$s"
 
-#: classes/habaridatetime.php:222
+#: classes/DateTime.php:222
 msgid "January"
 msgstr ""
 
-#: classes/habaridatetime.php:223
+#: classes/DateTime.php:223
 msgid "February"
 msgstr ""
 
-#: classes/habaridatetime.php:224
+#: classes/DateTime.php:224
 msgid "March"
 msgstr ""
 
-#: classes/habaridatetime.php:225
+#: classes/DateTime.php:225
 msgid "April"
 msgstr ""
 
-#: classes/habaridatetime.php:226 classes/habaridatetime.php:238
+#: classes/DateTime.php:226 classes/DateTime.php:238
 msgid "May"
 msgstr ""
 
-#: classes/habaridatetime.php:227
+#: classes/DateTime.php:227
 msgid "June"
 msgstr ""
 
-#: classes/habaridatetime.php:228
+#: classes/DateTime.php:228
 msgid "July"
 msgstr ""
 
-#: classes/habaridatetime.php:229
+#: classes/DateTime.php:229
 msgid "August"
 msgstr ""
 
-#: classes/habaridatetime.php:230
+#: classes/DateTime.php:230
 msgid "September"
 msgstr ""
 
-#: classes/habaridatetime.php:231
+#: classes/DateTime.php:231
 msgid "October"
 msgstr ""
 
-#: classes/habaridatetime.php:232
+#: classes/DateTime.php:232
 msgid "November"
 msgstr ""
 
-#: classes/habaridatetime.php:233
+#: classes/DateTime.php:233
 msgid "December"
 msgstr ""
 
-#: classes/habaridatetime.php:234
+#: classes/DateTime.php:234
 msgid "Jan"
 msgstr ""
 
-#: classes/habaridatetime.php:235
+#: classes/DateTime.php:235
 msgid "Feb"
 msgstr ""
 
-#: classes/habaridatetime.php:236
+#: classes/DateTime.php:236
 msgid "Mar"
 msgstr ""
 
-#: classes/habaridatetime.php:237
+#: classes/DateTime.php:237
 msgid "Apr"
 msgstr ""
 
-#: classes/habaridatetime.php:239
+#: classes/DateTime.php:239
 msgid "Jun"
 msgstr ""
 
-#: classes/habaridatetime.php:240
+#: classes/DateTime.php:240
 msgid "Jul"
 msgstr ""
 
-#: classes/habaridatetime.php:241
+#: classes/DateTime.php:241
 msgid "Aug"
 msgstr ""
 
-#: classes/habaridatetime.php:242
+#: classes/DateTime.php:242
 msgid "Sep"
 msgstr ""
 
-#: classes/habaridatetime.php:243
+#: classes/DateTime.php:243
 msgid "Oct"
 msgstr ""
 
-#: classes/habaridatetime.php:244
+#: classes/DateTime.php:244
 msgid "Nov"
 msgstr ""
 
-#: classes/habaridatetime.php:245
+#: classes/DateTime.php:245
 msgid "Dec"
 msgstr ""
 
-#: classes/habaridatetime.php:246
+#: classes/DateTime.php:246
 msgid "Sunday"
 msgstr ""
 
-#: classes/habaridatetime.php:247
+#: classes/DateTime.php:247
 msgid "Monday"
 msgstr ""
 
-#: classes/habaridatetime.php:248
+#: classes/DateTime.php:248
 msgid "Tuesday"
 msgstr ""
 
-#: classes/habaridatetime.php:249
+#: classes/DateTime.php:249
 msgid "Wednesday"
 msgstr ""
 
-#: classes/habaridatetime.php:250
+#: classes/DateTime.php:250
 msgid "Thursday"
 msgstr ""
 
-#: classes/habaridatetime.php:251
+#: classes/DateTime.php:251
 msgid "Friday"
 msgstr ""
 
-#: classes/habaridatetime.php:252
+#: classes/DateTime.php:252
 msgid "Saturday"
 msgstr ""
 
-#: classes/habaridatetime.php:253
+#: classes/DateTime.php:253
 msgid "Sun"
 msgstr ""
 
-#: classes/habaridatetime.php:254
+#: classes/DateTime.php:254
 msgid "Mon"
 msgstr ""
 
-#: classes/habaridatetime.php:255
+#: classes/DateTime.php:255
 msgid "Tue"
 msgstr ""
 
-#: classes/habaridatetime.php:256
+#: classes/DateTime.php:256
 msgid "Wed"
 msgstr ""
 
-#: classes/habaridatetime.php:257
+#: classes/DateTime.php:257
 msgid "Thu"
 msgstr ""
 
-#: classes/habaridatetime.php:258
+#: classes/DateTime.php:258
 msgid "Fri"
 msgstr ""
 
-#: classes/habaridatetime.php:259
+#: classes/DateTime.php:259
 msgid "Sat"
 msgstr ""
 
-#: classes/habaridatetime.php:260
+#: classes/DateTime.php:260
 msgid "am"
 msgstr ""
 
-#: classes/habaridatetime.php:261
+#: classes/DateTime.php:261
 msgid "pm"
 msgstr ""
 
-#: classes/habaridatetime.php:262
+#: classes/DateTime.php:262
 msgid "AM"
 msgstr ""
 
-#: classes/habaridatetime.php:263
+#: classes/DateTime.php:263
 msgid "PM"
 msgstr ""
 
-#: classes/habaridatetime.php:474 admin/dashboard.php:11
+#: classes/DateTime.php:474 admin/dashboard.php:11
 msgid "year"
 msgid_plural "years"
 msgstr[0] "年"
 
-#: classes/habaridatetime.php:478
+#: classes/DateTime.php:478
 msgid "month"
 msgid_plural "months"
 msgstr[0] "ヶ月"
 
-#: classes/habaridatetime.php:482
+#: classes/DateTime.php:482
 msgid "week"
 msgid_plural "weeks"
 msgstr[0] "週間"
 
-#: classes/habaridatetime.php:486
+#: classes/DateTime.php:486
 msgid "day"
 msgid_plural "days"
 msgstr[0] "日"
 
-#: classes/habaridatetime.php:490
+#: classes/DateTime.php:490
 msgid "hour"
 msgid_plural "hours"
 msgstr[0] "時間"
 
-#: classes/habaridatetime.php:494
+#: classes/DateTime.php:494
 msgid "minute"
 msgid_plural "minutes"
 msgstr[0] "分"
 
-#: classes/habaridatetime.php:498
+#: classes/DateTime.php:498
 msgid "second"
 msgid_plural "seconds"
 msgstr[0] "秒"
 
-#: classes/habaridatetime.php:509
+#: classes/DateTime.php:509
 #, php-format
 msgid "%s from now"
 msgstr "今から%s後"
 
-#: classes/habaridatetime.php:512
+#: classes/DateTime.php:512
 #, php-format
 msgid "%s ago"
 msgstr "%s前"
 
-#: classes/habaridatetime.php:531
+#: classes/DateTime.php:531
 msgid "just now"
 msgstr "ちょうど今"
 
-#: classes/habaridatetime.php:535
+#: classes/DateTime.php:535
 #, php-format
 msgid "%d minute ago"
 msgid_plural "%d minutes ago"
 msgstr[0] "%d分前"
 
-#: classes/habaridatetime.php:539
+#: classes/DateTime.php:539
 #, php-format
 msgid "%d hour ago"
 msgid_plural "%d hours ago"
 msgstr[0] "%d時間前"
 
-#: classes/habaridatetime.php:543
+#: classes/DateTime.php:543
 #, php-format
 msgid "yesterday"
 msgid_plural "%d days ago"
 msgstr[0] "%d日前"
 
-#: classes/habaridatetime.php:547
+#: classes/DateTime.php:547
 #, php-format
 msgid "last week"
 msgid_plural "%d weeks ago"
 msgstr[0] "%d週間前"
 
-#: classes/habaridatetime.php:551
+#: classes/DateTime.php:551
 #, php-format
 msgid "last month"
 msgid_plural "%d months ago"
 msgstr[0] "%dヶ月前"
 
-#: classes/habaridatetime.php:555
+#: classes/DateTime.php:555
 #, php-format
 msgid "last year"
 msgid_plural "%d years ago"
@@ -1551,44 +1570,44 @@ msgstr "すべて削除"
 msgid "Permanently deleted %d posts"
 msgstr "%d個の投稿を永久に削除しました。"
 
-#: plugins/pingback/pingback.plugin.php:272
+#: plugins/pingback/pingback.plugin.php:274
 #, php-format
 msgid ""
 "Unable to retrieve target, can't detect pingback endpoint. (Source: %1$s | "
 "Target: %2$s)"
 msgstr ""
 
-#: plugins/pingback/pingback.plugin.php:295
+#: plugins/pingback/pingback.plugin.php:297
 #, php-format
 msgid "Invalid Pingback endpoint - %1$s (Source: %2$s | Target: %3$s)"
 msgstr ""
 
-#: plugins/pingback/pingback.plugin.php:300
+#: plugins/pingback/pingback.plugin.php:302
 #, php-format
 msgid "Pingback error: %1$s - %2$s (Source: %3$s | Target: %4$s)"
 msgstr ""
 
-#: plugins/pingback/pingback.plugin.php:371
+#: plugins/pingback/pingback.plugin.php:373
 #, php-format
 msgid "Sent pingbacks for \"%1$s\", target: %2$s"
 msgstr "\"%1$s\"に送信されたピンバック、ターゲット: %2$s"
 
-#: plugins/pingback/pingback.plugin.php:383
+#: plugins/pingback/pingback.plugin.php:385
 #: handlers/adminoptionshandler.php:49
 msgid "Publishing"
 msgstr "投稿設定"
 
-#: plugins/pingback/pingback.plugin.php:384
+#: plugins/pingback/pingback.plugin.php:386
 msgid "Send Pingbacks to Links"
 msgstr "リンクにピンバックを送信"
 
-#: plugins/pingback/pingback.plugin.php:410
-#: plugins/pingback/pingback.plugin.php:416
+#: plugins/pingback/pingback.plugin.php:412
+#: plugins/pingback/pingback.plugin.php:418
 #, php-format
 msgid "%d Pingbacks"
 msgstr ""
 
-#: plugins/pingback/pingback.plugin.php:413
+#: plugins/pingback/pingback.plugin.php:415
 #, php-format
 msgid "%d Pingback"
 msgstr ""
@@ -1638,38 +1657,29 @@ msgid ""
 msgstr ""
 
 #: plugins/flickrsilo/flickrsilo.plugin.php:817
-#: plugins/flickrsilo/flickrsilo.plugin.php:864
-msgid "Do you want to "
-msgstr ""
-
-#: plugins/flickrsilo/flickrsilo.plugin.php:817
-msgid "revoke authorization"
+#, php-format
+msgid "Do you want to <a href=\"%1$s\">revoke authorization</a>?"
 msgstr ""
 
 #: plugins/flickrsilo/flickrsilo.plugin.php:824
-msgid "To use this plugin, you must "
-msgstr ""
-
-#: plugins/flickrsilo/flickrsilo.plugin.php:824
-msgid "authorize Habari to have access to your Flickr account"
-msgstr ""
-
-#: plugins/flickrsilo/flickrsilo.plugin.php:825
-msgid "When you have completed the authorization on Flickr, return here and "
+#, php-format
+msgid ""
+"To use this plugin, you must <a href=\"%1$s\">authorized Habari to have "
+"access to your Flickr account</a>."
 msgstr ""
 
 #: plugins/flickrsilo/flickrsilo.plugin.php:825
-msgid "confirm that the authorization was successful"
+#, php-format
+msgid ""
+"When you have completed the authorization on Flickr, return here and <a "
+"href=\"%1$s\">confirm that the authorization was successful</a>."
 msgstr ""
 
 #: plugins/flickrsilo/flickrsilo.plugin.php:839
+#, php-format
 msgid ""
 "Either you have already authorized Habari to access your flickr account, or "
-"you have not yet done so.  Please "
-msgstr ""
-
-#: plugins/flickrsilo/flickrsilo.plugin.php:839
-msgid "try again"
+"you have not yet done so.  Please <a href=\"%1$s\">try again</a>."
 msgstr ""
 
 #: plugins/flickrsilo/flickrsilo.plugin.php:845
@@ -1682,6 +1692,10 @@ msgstr ""
 
 #: plugins/flickrsilo/flickrsilo.plugin.php:863
 msgid "The Flickr Silo Plugin authorization has been deleted."
+msgstr ""
+
+#: plugins/flickrsilo/flickrsilo.plugin.php:864
+msgid "Do you want to "
 msgstr ""
 
 #: plugins/flickrsilo/flickrsilo.plugin.php:864
@@ -1911,7 +1925,8 @@ msgstr ""
 #: plugins/wpimport/wpimport.plugin.php:530
 #, php-format
 msgid ""
-"There was an error importing post %s. See the EventLog for the error message."
+"There was an error importing post %s. See the EventLog for the error "
+"message."
 msgstr ""
 
 #: plugins/wpimport/wpimport.plugin.php:609
@@ -1989,12 +2004,14 @@ msgid "%1$d comment"
 msgid_plural "%1$d comments"
 msgstr[0] "%1$d個のコメント"
 
-#. @locale Time formats according to http://php.net/manual/en/function.date.php
+#. @locale Time formats according to
+#. http://php.net/manual/en/function.date.php
 #: plugins/coredashmodules/dashboard.block.latest_comments.php:15
 msgid "g:ia"
 msgstr ""
 
-#. @locale Date formats according to http://php.net/manual/en/function.date.php
+#. @locale Date formats according to
+#. http://php.net/manual/en/function.date.php
 #: plugins/coredashmodules/dashboard.block.latest_comments.php:16
 #: plugins/coredashmodules/dashboard.block.latest_entries.php:7
 msgid "F jS, Y"
@@ -2006,12 +2023,14 @@ msgstr ""
 msgid "Posted at %1$s on %2$s"
 msgstr ""
 
-#. @locale Time formats according to http://php.net/manual/en/function.date.php
+#. @locale Time formats according to
+#. http://php.net/manual/en/function.date.php
 #: plugins/coredashmodules/dashboard.block.latest_entries.php:6
 msgid "g:i"
 msgstr ""
 
-#. @locale Date formats according to http://php.net/manual/en/function.date.php
+#. @locale Date formats according to
+#. http://php.net/manual/en/function.date.php
 #: plugins/coredashmodules/dashboard.block.latest_entries.php:8
 #: plugins/coredashmodules/dashboard.block.latest_log_activity.php:5
 msgid "M j"
@@ -2025,7 +2044,7 @@ msgstr "編集 '%s'"
 
 #: plugins/coredashmodules/dashboard.block.latest_entries.php:9
 #: admin/plugin.php:35 admin/posts_items.php:21 admin/themes.php:9
-#: admin/themes.php:117
+#: admin/themes.php:118
 msgid "by"
 msgstr "by"
 
@@ -2417,8 +2436,8 @@ msgstr ""
 #: plugins/habarisilo/habarisilo.plugin.php:534
 msgid ""
 "A PHP extension stopped the file upload. PHP does not provide a way to "
-"ascertain which extension caused the file upload to stop; examining the list "
-"of loaded extensions with phpinfo() may help."
+"ascertain which extension caused the file upload to stop; examining the list"
+" of loaded extensions with phpinfo() may help."
 msgstr ""
 
 #: plugins/habarisilo/habarisilo.plugin.php:536
@@ -2721,7 +2740,6 @@ msgstr "エラー: 新しい名前が指定されていません。"
 msgid "Tag %1$s has been renamed to %2$s."
 msgid_plural "Tags %1$s have been renamed to %2$s."
 msgstr[0] ""
-msgstr[1] ""
 
 #: handlers/adminhandler.php:25
 msgid "Your session has ended, please log in and try again."
@@ -2919,8 +2937,8 @@ msgstr "%d個のグループを削除しました。"
 msgid "Only printable characters are allowed."
 msgstr ""
 
-#: handlers/installhandler.php:157 handlers/installhandler.php:1798
-#: handlers/installhandler.php:1869
+#: handlers/installhandler.php:157 handlers/installhandler.php:1818
+#: handlers/installhandler.php:1889
 msgid "Allowed characters are A-Z, a-z and \"_\"."
 msgstr ""
 
@@ -2932,8 +2950,8 @@ msgstr ""
 msgid "Habari successfully installed."
 msgstr "Habariのインストールに成功しました。"
 
-#: handlers/installhandler.php:226 handlers/adminpluginshandler.php:92
-#: handlers/adminpluginshandler.php:96 admin/themes.php:149
+#: handlers/installhandler.php:226 handlers/adminpluginshandler.php:93
+#: handlers/adminpluginshandler.php:97 admin/themes.php:151
 msgid "Activate"
 msgstr "有効化"
 
@@ -2983,27 +3001,27 @@ msgid "Problem creating first post."
 msgstr "最初の投稿を作成中に問題が発生しました。"
 
 #: handlers/installhandler.php:555 handlers/installhandler.php:588
-#: handlers/installhandler.php:1813 handlers/installhandler.php:1884
+#: handlers/installhandler.php:1833 handlers/installhandler.php:1904
 msgid "Access denied. Make sure these credentials are valid."
 msgstr ""
 
 #: handlers/installhandler.php:558 handlers/installhandler.php:591
-#: handlers/installhandler.php:1817 handlers/installhandler.php:1888
+#: handlers/installhandler.php:1837 handlers/installhandler.php:1908
 msgid "That database does not exist."
 msgstr "データベースが存在しません。"
 
 #: handlers/installhandler.php:561 handlers/installhandler.php:594
-#: handlers/installhandler.php:1821 handlers/installhandler.php:1892
+#: handlers/installhandler.php:1841 handlers/installhandler.php:1912
 msgid "Could not connect to host."
 msgstr "データベースへ接続出来ませんでした。"
 
-#: handlers/installhandler.php:622 handlers/installhandler.php:1940
+#: handlers/installhandler.php:622 handlers/installhandler.php:1960
 #, php-format
 msgid ""
 "Cannot write to %s. The SQLite data file is not writable by the web server."
 msgstr ""
 
-#: handlers/installhandler.php:626 handlers/installhandler.php:1933
+#: handlers/installhandler.php:626 handlers/installhandler.php:1953
 #, php-format
 msgid ""
 "Cannot write to %s directory. SQLite requires that the directory that holds "
@@ -3018,64 +3036,60 @@ msgid ""
 "directory containing the database file be writable by the web server."
 msgstr ""
 
-#: handlers/installhandler.php:784 handlers/installhandler.php:1709
+#: handlers/installhandler.php:786 handlers/installhandler.php:1711
 msgid "Trim the log table"
 msgstr "ログテーブルを縮小する"
 
-#: handlers/installhandler.php:787 handlers/installhandler.php:1717
+#: handlers/installhandler.php:789 handlers/installhandler.php:1719
 msgid "Perform a check for plugin updates."
 msgstr "プラグインの更新をチェックします。"
 
-#: handlers/installhandler.php:831
+#: handlers/installhandler.php:833
 msgid ""
 "This site is running <a href=\"http://habariproject.org/\">Habari</a>, a "
 "state-of-the-art publishing platform!  Habari is a community-driven project "
 "created and supported by people from all over the world.  Please visit <a "
-"href=\"http://habariproject.org/\">http://habariproject.org/</a> to find out "
-"more!"
-msgstr ""
-"このサイトは先進的なブログプラットフォームの<a "
-"href=\"http://habariproject.org/\">Habari</a>で動いています。Habariは世界中に人々によって作られたコミュ"
-"ニティ主導のプロジェクトです。詳しい情報は<a "
-"href=\"http://habariproject.org/\">http://habariproject.org/</a>をご覧くさだい。"
+"href=\"http://habariproject.org/\">http://habariproject.org/</a> to find out"
+" more!"
+msgstr "このサイトは先進的なブログプラットフォームの<a href=\"http://habariproject.org/\">Habari</a>で動いています。Habariは世界中に人々によって作られたコミュニティ主導のプロジェクトです。詳しい情報は<a href=\"http://habariproject.org/\">http://habariproject.org/</a>をご覧くさだい。"
 
-#: handlers/installhandler.php:894
+#: handlers/installhandler.php:896
 msgid "currently unsupported."
 msgstr "現在サポートされていません。"
 
-#: handlers/installhandler.php:1002 handlers/installhandler.php:1031
+#: handlers/installhandler.php:1004 handlers/installhandler.php:1033
 msgid "No admin user found"
 msgstr "管理ユーザーが見つかりません"
 
-#: handlers/installhandler.php:1439
+#: handlers/installhandler.php:1441
 msgid "Site Maintenance"
 msgstr "サイトのメンテナンス"
 
-#: handlers/installhandler.php:1440
+#: handlers/installhandler.php:1442
 msgid "Habari is currently being upgraded."
 msgstr "Habariの最新版が利用可能です。"
 
-#: handlers/installhandler.php:1441
+#: handlers/installhandler.php:1443
 msgid "Try again in a little while."
 msgstr ""
 
-#: handlers/installhandler.php:1454
+#: handlers/installhandler.php:1456
 msgid "Truncate the log table"
 msgstr "ログテーブルを空にする"
 
-#: handlers/installhandler.php:1780 handlers/installhandler.php:1851
+#: handlers/installhandler.php:1800 handlers/installhandler.php:1871
 msgid "The database host field was left empty."
 msgstr "データベースホスト名が入力されていません。"
 
-#: handlers/installhandler.php:1786 handlers/installhandler.php:1857
+#: handlers/installhandler.php:1806 handlers/installhandler.php:1877
 msgid "The database name field was left empty."
 msgstr "データベース名が入力されていません。"
 
-#: handlers/installhandler.php:1792 handlers/installhandler.php:1863
+#: handlers/installhandler.php:1812 handlers/installhandler.php:1883
 msgid "The database user field was left empty."
 msgstr "データベースユーザ名が入力されていません。"
 
-#: handlers/installhandler.php:1923
+#: handlers/installhandler.php:1943
 msgid "The database file was left empty."
 msgstr "データベースファイルが指定されていません。"
 
@@ -3148,8 +3162,8 @@ msgstr "ロケール"
 
 #: handlers/adminoptionshandler.php:104
 msgid ""
-"International language code : This value is set in your config.php file, and "
-"cannot be changed here."
+"International language code : This value is set in your config.php file, and"
+" cannot be changed here."
 msgstr ""
 
 #: handlers/adminoptionshandler.php:104
@@ -3205,6 +3219,11 @@ msgstr "モジュールが削除されました。"
 
 #: handlers/admindashboardhandler.php:130
 msgid "Module Configuration Saved."
+msgstr ""
+
+#: handlers/adminlogshandler.php:146 handlers/adminlogshandler.php:160
+#: handlers/adminlogshandler.php:172 handlers/adminlogshandler.php:185
+msgid "Any"
 msgstr ""
 
 #: handlers/adminlogshandler.php:251
@@ -3459,22 +3478,22 @@ msgid ""
 "finished: "
 msgstr ""
 
-#: handlers/adminpluginshandler.php:39 handlers/adminpluginshandler.php:78
+#: handlers/adminpluginshandler.php:39 handlers/adminpluginshandler.php:79
 msgid "Deactivate"
 msgstr "無効化"
 
-#: handlers/adminpluginshandler.php:127 installer/db_setup.php:11
+#: handlers/adminpluginshandler.php:129 installer/db_setup.php:11
 #: installer/db_setup.php:166 installer/db_setup.php:220
-#: installer/db_setup.php:248 admin/themes.php:21 admin/themes.php:23
+#: installer/db_setup.php:248 admin/themes.php:22 admin/themes.php:24
 msgid "Help"
 msgstr "ヘルプ"
 
-#: handlers/adminpluginshandler.php:219
+#: handlers/adminpluginshandler.php:221
 #, php-format
 msgid "Activated plugin '%s'"
 msgstr "'%s'プラグインを有効化しました。"
 
-#: handlers/adminpluginshandler.php:228
+#: handlers/adminpluginshandler.php:230
 #, php-format
 msgid "Deactivated plugin '%s'"
 msgstr "'%s'プラグインを無効化しました。"
@@ -3549,7 +3568,8 @@ msgstr "on"
 msgid "Time of this comment"
 msgstr "このコメントの時間"
 
-#. @locale Date formats according to http://php.net/manual/en/function.date.php
+#. @locale Date formats according to
+#. http://php.net/manual/en/function.date.php
 #: themes/mzingi/commentform.php:47
 msgid "M j, Y h:ia"
 msgstr ""
@@ -3562,7 +3582,8 @@ msgstr "モデレーション中"
 msgid "<li>There are currently no comments.</li>"
 msgstr ""
 
-#. @locale Date formats according to http://php.net/manual/en/function.date.php
+#. @locale Date formats according to
+#. http://php.net/manual/en/function.date.php
 #: themes/mzingi/tag.php:14 themes/mzingi/search.php:14
 #: themes/mzingi/sidebar.php:23
 msgid "F j, Y"
@@ -3859,7 +3880,6 @@ msgstr ""
 msgid "%1$d Comment"
 msgid_plural "%1$d Comments"
 msgstr[0] ""
-msgstr[1] ""
 
 #: themes/charcoal/theme.php:172
 msgid "Search for "
@@ -3933,18 +3953,15 @@ msgstr "あなたのコメントは承認待ちです。"
 msgid "Be the first to write a comment!"
 msgstr "最初のコメントを書いてください！"
 
-#: themes/charcoal/footer.php:8
+#: themes/charcoal/footer.php:10
 #, php-format
 msgid "%1$s is powered by %2$s"
 msgstr "%1$s is powered by %2$s"
 
-#: themes/charcoal/footer.php:12
-msgid "Atom Entries"
-msgstr "Atom エントリー"
-
-#: themes/charcoal/footer.php:13
-msgid "Atom Comments"
-msgstr "Atom コメント"
+#: themes/charcoal/footer.php:17
+#, php-format
+msgid "<a href=\"%1$s\">Atom Entries</a> and <a href=\"%2$s\">Atom Comments</a>"
+msgstr ""
 
 #: themes/charcoal/home.php:40
 msgid "No posts published, yet."
@@ -3988,12 +4005,10 @@ msgstr "%1$s - PDOドライバーが見つかりません。ヘルプを参照�
 #: installer/db_setup.php:31
 msgid ""
 "<strong>Database Type</strong> specifies the type of database to which "
-"Habari will connect.  Changing this setting may affect the other fields that "
-"are available here.  If the database engine that you wanted to use is not in "
-"this list, you may need to install a PDO driver to enable it."
-msgstr ""
-"<strong>データベースタイプ</strong>は、Habariが接続するデータベースのタイプを指定します。利用したいエータベースエンジンがこのリスト"
-"にない場合はPDOドライバーをインストールして有効化する必要があるかもしれません。"
+"Habari will connect.  Changing this setting may affect the other fields that"
+" are available here.  If the database engine that you wanted to use is not "
+"in this list, you may need to install a PDO driver to enable it."
+msgstr "<strong>データベースタイプ</strong>は、Habariが接続するデータベースのタイプを指定します。利用したいエータベースエンジンがこのリストにない場合はPDOドライバーをインストールして有効化する必要があるかもしれません。"
 
 #: installer/db_setup.php:32 installer/db_setup.php:46
 #: installer/db_setup.php:57 installer/db_setup.php:68
@@ -4023,9 +4038,7 @@ msgid ""
 "address of the server that runs the MySQL database to which Habari will "
 "connect.  If MySQL is running on your web server, and most of the time it "
 "is, \"localhost\" is usually a good value for this field."
-msgstr ""
-"<strong>データベースホスト</strong>は、Habariが接続するMySQLデータベースが動作しているサーバのホスト名またはIPアドレスです。"
-"MySQLがWebサーバと同じホスト上で動作している場合、このフィールドの値は\"localhost\"です。"
+msgstr "<strong>データベースホスト</strong>は、Habariが接続するMySQLデータベースが動作しているサーバのホスト名またはIPアドレスです。MySQLがWebサーバと同じホスト上で動作している場合、このフィールドの値は\"localhost\"です。"
 
 #: installer/db_setup.php:51 installer/db_setup.php:98
 #: installer/db_setup.php:180 admin/users.php:42
@@ -4034,8 +4047,8 @@ msgstr "ユーザ名"
 
 #: installer/db_setup.php:56
 msgid ""
-"<strong>Database User</strong> is the username used to connect Habari to the "
-"MySQL database."
+"<strong>Database User</strong> is the username used to connect Habari to the"
+" MySQL database."
 msgstr "<strong>データベースユーザ</strong>は、HabariがMySQLデータベースに接続に使うユーザ名です。"
 
 #: installer/db_setup.php:62 installer/db_setup.php:109
@@ -4061,32 +4074,29 @@ msgstr "PostgreSQL 設定"
 
 #: installer/db_setup.php:84
 msgid ""
-"Use the settings below only if you have selected PostgreSQL as your database "
-"engine."
+"Use the settings below only if you have selected PostgreSQL as your database"
+" engine."
 msgstr "データベースにPostgreSQLを選択した場合のみ以下の設定を行ってください。"
 
 #: installer/db_setup.php:92
 msgid ""
 "<strong>Database Host</strong> is the host (domain) name or server IP "
-"address of the server that runs the PostgreSQL database to which Habari will "
-"connect.  If PostgreSQL is running on your web server, and most of the time "
-"it is, \"localhost\" is usually a good value for this field."
-msgstr ""
-"<strong>データベースホスト</strong>は、Habariが接続するPostgreSQLデータベースが動作しているサーバのホスト名またはIPアド"
-"レスです。PostgreSQLがWebサーバと同じホスト上で動作している場合、このフィールドの値は\"localhost\"です。"
+"address of the server that runs the PostgreSQL database to which Habari will"
+" connect.  If PostgreSQL is running on your web server, and most of the time"
+" it is, \"localhost\" is usually a good value for this field."
+msgstr "<strong>データベースホスト</strong>は、Habariが接続するPostgreSQLデータベースが動作しているサーバのホスト名またはIPアドレスです。PostgreSQLがWebサーバと同じホスト上で動作している場合、このフィールドの値は\"localhost\"です。"
 
 #: installer/db_setup.php:103
 msgid ""
-"<strong>Database User</strong> is the username used to connect Habari to the "
-"PostgreSQL database."
+"<strong>Database User</strong> is the username used to connect Habari to the"
+" PostgreSQL database."
 msgstr "<strong>データベースユーザ名</strong>は、HabariがPostgreSQLデータベースに接続する時に使うユーザ名です。"
 
 #: installer/db_setup.php:114
 msgid ""
 "<strong>Database Password</strong> is the password used to connect the "
 "specified user to the PostgreSQL database."
-msgstr ""
-"<strong>データベースパスワード</strong>は、HabariがPostgreSQLデータベースに接続する時に使うパスワードです。"
+msgstr "<strong>データベースパスワード</strong>は、HabariがPostgreSQLデータベースに接続する時に使うパスワードです。"
 
 #: installer/db_setup.php:125
 msgid ""
@@ -4113,18 +4123,14 @@ msgid ""
 "<strong>Data file</strong> is the SQLite file that will store your Habari "
 "data.  This should be the path to where your data file resides, relative to "
 "the Habari user directory."
-msgstr ""
-"<strong>データファイル</strong>は、Habariのデータを保存するSQLiteファイルです。このパスはHabariのユーザディレクトリから"
-"の相対パスである必要があります。"
+msgstr "<strong>データファイル</strong>は、Habariのデータを保存するSQLiteファイルです。このパスはHabariのユーザディレクトリからの相対パスである必要があります。"
 
 #: installer/db_setup.php:151
 msgid ""
 "<strong>Table Prefix</strong> is a prefix that will be appended to each "
 "table that Habari creates in the database, making it easy to distinguish "
 "those tables in the database from those of other installations."
-msgstr ""
-"<strong>テーブルプリフィックス</strong>は、Habariがデータベースに作成する各テーブル名に追加するプリフィックスです。他のテーブルとの"
-"区別が簡単になります。"
+msgstr "<strong>テーブルプリフィックス</strong>は、Habariがデータベースに作成する各テーブル名に追加するプリフィックスです。他のテーブルとの区別が簡単になります。"
 
 #: installer/db_setup.php:156
 msgid "Check Database Connection"
@@ -4175,7 +4181,8 @@ msgstr "プラグインの有効化"
 #: installer/db_setup.php:255 admin/plugin.php:18
 #, php-format
 msgid ""
-"The plugin file %s is a legacy plugin, and does not include an XML info file."
+"The plugin file %s is a legacy plugin, and does not include an XML info "
+"file."
 msgstr ""
 
 #: installer/db_setup.php:289 installer/htaccess.php:25
@@ -4205,9 +4212,7 @@ msgstr "ヘルプ"
 msgid ""
 "Your <strong>.htaccess</strong> file is not writable. In order to "
 "successfully install Habari, please paste the following into"
-msgstr ""
-"<strong>.htaccess</strong>ファイルに書き込みが出来ません。Habariのインストールを完了するために下記の内容で.htacces"
-"sファイルを作成してください。"
+msgstr "<strong>.htaccess</strong>ファイルに書き込みが出来ません。Habariのインストールを完了するために下記の内容で.htaccessファイルを作成してください。"
 
 #: installer/htaccess.php:14
 msgid ""
@@ -4215,9 +4220,7 @@ msgid ""
 "send requests to Habari for handling. Habari is not able to write this file "
 "to your server automatically, so you must create this file yourself to "
 "continue the installation."
-msgstr ""
-"<strong>.htaccess</strong>は、Habariへのリクエストの処理方法をWebサーバに指示するためのファイルです。Habariはこの"
-"ファイルを作成出来なかったためインストールを続行するには手動でこのファイルを作成する必要があります。"
+msgstr "<strong>.htaccess</strong>は、Habariへのリクエストの処理方法をWebサーバに指示するためのファイルです。Habariはこのファイルを作成出来なかったためインストールを続行するには手動でこのファイルを作成する必要があります。"
 
 #: installer/htaccess.php:28 installer/sqlite.php:28
 msgid ""
@@ -4233,9 +4236,7 @@ msgstr "インストーラを再起動"
 msgid ""
 "Your <strong>config.php</strong> file is not writable. In order to "
 "successfully install Habari, please paste the following into"
-msgstr ""
-"<strong>config.php</strong>ファイルに書き込みが出来ません。Habariのインストールを完了するために下記の内容でconfig."
-"phpを作成してください。"
+msgstr "<strong>config.php</strong>ファイルに書き込みが出来ません。Habariのインストールを完了するために下記の内容でconfig.phpを作成してください。"
 
 #: installer/config.php:20
 msgid ""
@@ -4243,9 +4244,7 @@ msgid ""
 "your database. Habari is not able to write this file to your server "
 "automatically, so you must create this file yourself to continute the "
 "installation."
-msgstr ""
-"<strong>config.php</strong>は、データベースに接続する方法をHabariに指定するファイルです。Habariは自動的にこのファイ"
-"ルを作成出来なかったためインストールを続行するために手動でこのファイルを作成する必要があります。"
+msgstr "<strong>config.php</strong>は、データベースに接続する方法をHabariに指定するファイルです。Habariは自動的にこのファイルを作成出来なかったためインストールを続行するために手動でこのファイルを作成する必要があります。"
 
 #: installer/config.php:34
 msgid ""
@@ -4266,10 +4265,7 @@ msgid ""
 "disallows access to it by readers on the web. Habari is not able to write "
 "this section in your .htaccess file automatically, so you must add this "
 "section yourself to gain the enhanced security it offers you."
-msgstr ""
-"SQLiteデータベースは、他のサーバ上にあるファイルと同じようなファイルです。Web閲覧者からのアクセスを拒否する設定を.htaccessにファイルに追"
-"加することでセキュリティを強化することが出来ます。Habariは、.htaccessファイルにこの設定を書き込むことが出来ませんでした。そのためセキュリテ"
-"ィを強化するために手動でこの設定を追加する必要があります。"
+msgstr "SQLiteデータベースは、他のサーバ上にあるファイルと同じようなファイルです。Web閲覧者からのアクセスを拒否する設定を.htaccessにファイルに追加することでセキュリティを強化することが出来ます。Habariは、.htaccessファイルにこの設定を書き込むことが出来ませんでした。そのためセキュリティを強化するために手動でこの設定を追加する必要があります。"
 
 #: installer/requirements.php:5
 msgid "Before you install <em>Habari</em>&hellip;"
@@ -4290,13 +4286,12 @@ msgstr ""
 #: installer/requirements.php:14
 msgid ""
 "If your web server is part of the group which owns the directory, you'll "
-"need to add group write permissions to the directory. The procedure for this "
-"is as follows:"
+"need to add group write permissions to the directory. The procedure for this"
+" is as follows:"
 msgstr ""
 
 #: installer/requirements.php:18
-msgid ""
-"Open a terminal window, and then change to the installation directory:"
+msgid "Open a terminal window, and then change to the installation directory:"
 msgstr "ターミナルウィンドウを開いてインストールディレクトリに移動してください:"
 
 #: installer/requirements.php:22
@@ -4307,8 +4302,7 @@ msgstr "カレントディレクトリの<em>mode</em> (パーミッション)�
 msgid ""
 "<em>Note</em>: You may need to use <strong>sudo</strong> and enter an "
 "administrator password if you do not own the directory."
-msgstr ""
-"<em>ノート</em>: ディレクトリの所有権がない場合はsudoコマンドを使用して管理者パスワードを入力する必要があるかもしれません。"
+msgstr "<em>ノート</em>: ディレクトリの所有権がない場合はsudoコマンドを使用して管理者パスワードを入力する必要があるかもしれません。"
 
 #: installer/requirements.php:31
 msgid ""
@@ -4356,13 +4350,10 @@ msgstr "PDOドライバーが有効化されていません。"
 
 #: installer/requirements.php:77
 msgid ""
-"requires that at least one <a href=\"http://www.php.net/pdo\">PDO driver</a> "
-"be installed. Please ask your hosting provider to enable one of the PDO "
+"requires that at least one <a href=\"http://www.php.net/pdo\">PDO driver</a>"
+" be installed. Please ask your hosting provider to enable one of the PDO "
 "drivers supported by Habari."
-msgstr ""
-"インストールには最低一つの<a "
-"href=\"http://www.php.net/pdo\">PDOドライバー</a>が必要です。HabariでサポートされているPDOドライバーを有効"
-"化するようにサーバ業者に依頼してください。"
+msgstr "インストールには最低一つの<a href=\"http://www.php.net/pdo\">PDOドライバー</a>が必要です。HabariでサポートされているPDOドライバーを有効化するようにサーバ業者に依頼してください。"
 
 #: installer/requirements.php:81
 msgid "mod_rewrite not enabled"
@@ -4597,8 +4588,7 @@ msgstr "現在インポートプラグインはインストールされていま
 
 #: admin/import.php:22
 #, php-format
-msgid ""
-"Please <a href=\"%1$s\">activate an import plugin</a> to enable importing."
+msgid "Please <a href=\"%1$s\">activate an import plugin</a> to enable importing."
 msgstr "インポートするために<a href=\"%1$s\">インポートプラグインを有効化</a>してください。"
 
 #: admin/import.php:27
@@ -4660,8 +4650,8 @@ msgstr ""
 
 #: admin/dashboard.php:12
 msgid ""
-"Consider switching to <a href=\"http://mozilla.com\">Mozilla Firefox</a>, <a "
-"href=\"http://www.apple.com/safari/download/\">Safari</a>, <a "
+"Consider switching to <a href=\"http://mozilla.com\">Mozilla Firefox</a>, <a"
+" href=\"http://www.apple.com/safari/download/\">Safari</a>, <a "
 "href=\"http://www.google.com/chrome\">Google Chrome</a>, or a more recent "
 "version of <a href=\"http://www.microsoft.com/windows/Internet-"
 "explorer/default.aspx\">Internet Explorer</a>."
@@ -4677,7 +4667,6 @@ msgstr "%s は起動後 %s 経過しました"
 msgid "%d post"
 msgid_plural "%d posts"
 msgstr[0] ""
-msgstr[1] ""
 
 #: admin/dashboard.php:42
 #, php-format
@@ -4696,7 +4685,6 @@ msgstr[0] "%d タグ"
 msgid "[You] have published %1$s%2$s"
 msgid_plural "The [%3$d authors] have published %1$s%2$s"
 msgstr[0] ""
-msgstr[1] ""
 
 #: admin/dashboard.php:60
 msgid " with "
@@ -4707,7 +4695,6 @@ msgstr " と "
 msgid "%d draft"
 msgid_plural "%d drafts"
 msgstr[0] ""
-msgstr[1] ""
 
 #: admin/dashboard.php:91
 #, php-format
@@ -4726,7 +4713,6 @@ msgstr[0] "%d 件の未承認コメント"
 msgid "%d spam comment"
 msgid_plural "%d spam comments"
 msgstr[0] ""
-msgstr[1] ""
 
 #: admin/dashboard.php:117
 #, php-format
@@ -4745,8 +4731,7 @@ msgstr ""
 
 #: admin/dashboard.php:160
 #, php-format
-msgid ""
-"%1$s <a href=\"%2$s\">%3$s</a> has the following updates available: %4$s"
+msgid "%1$s <a href=\"%2$s\">%3$s</a> has the following updates available: %4$s"
 msgstr ""
 
 #: admin/dashboard.php:180
@@ -4756,10 +4741,7 @@ msgid ""
 "we encourage you to read the [manual], which is bundled with every Habari "
 "install. This link also appears at the bottom of every page in the admin "
 "area."
-msgstr ""
-"Habari へようこそ！わたしたちはあなたが Habari "
-"の世界に飛び込み、探検することを願っています。もし行き詰まることがあったり高度な機能について調べたい事があれば Habari "
-"と一緒にインストールされた[マニュアル]を読むことをおすすめします。また[マニュアル]へのリンクは管理エリアの全てのページのフッターに表示されています。"
+msgstr "Habari へようこそ！わたしたちはあなたが Habari の世界に飛び込み、探検することを願っています。もし行き詰まることがあったり高度な機能について調べたい事があれば Habari と一緒にインストールされた[マニュアル]を読むことをおすすめします。また[マニュアル]へのリンクは管理エリアの全てのページのフッターに表示されています。"
 
 #: admin/dashboard.php:181
 msgid "Habari Manual"
@@ -4774,7 +4756,6 @@ msgstr "このメッセージは次回以降表示されません。"
 msgid "Group %1$s has <strong>%2$d</strong> member"
 msgid_plural "Group %1$s has <strong>%2$d</strong> members"
 msgstr[0] ""
-msgstr[1] ""
 
 #: admin/group.php:27
 msgid "Group Members"
@@ -4827,26 +4808,26 @@ msgid ""
 "The XML file for the plugin %s contained errors and could not be loaded."
 msgstr ""
 
-#: admin/plugin.php:57
+#: admin/plugin.php:58
 msgid "v1.1 Update Available Now"
 msgstr "v1.1 アップデートがあります。"
 
-#: admin/plugin.php:71
+#: admin/plugin.php:72
 #, php-format
 msgid "This plugin requires the %1$s feature and cannot be activated."
 msgstr ""
 
-#: admin/plugin.php:81
+#: admin/plugin.php:82
 #, php-format
 msgid "%1$s will be activated to provide %2$s."
 msgstr ""
 
-#: admin/plugin.php:86
+#: admin/plugin.php:87
 #, php-format
 msgid "One of these plugins must be activated to provide %s:"
 msgstr ""
 
-#: admin/plugin.php:119
+#: admin/plugin.php:120
 msgid "Close"
 msgstr "閉じる"
 
@@ -5065,45 +5046,45 @@ msgstr "指定された条件ではコメントが見つかりませんでした
 msgid "Current Theme"
 msgstr "現在のテーマ"
 
-#: admin/themes.php:37
+#: admin/themes.php:38
 msgid "v"
 msgstr "v"
 
-#: admin/themes.php:37
+#: admin/themes.php:38
 msgid "Update Available"
 msgstr "アップデートがあります。"
 
-#: admin/themes.php:48 admin/themes.php:133
+#: admin/themes.php:49 admin/themes.php:135
 #, php-format
 msgid "%1$s is licensed under the %2$s"
 msgstr "%1$sは%2$sの元でライセンスされています。"
 
-#: admin/themes.php:71
+#: admin/themes.php:72
 msgid "General"
 msgstr ""
 
-#: admin/themes.php:79
+#: admin/themes.php:80
 msgid "Areas"
 msgstr ""
 
-#: admin/themes.php:111
+#: admin/themes.php:112
 msgid "Available Themes"
 msgstr "利用可能なテーマ"
 
-#: admin/themes.php:139
+#: admin/themes.php:141
 msgid "Legacy theme."
 msgstr "従来のテーマ"
 
-#: admin/themes.php:141
+#: admin/themes.php:143
 #, php-format
 msgid "This theme requires the parent theme named \"%s\"."
 msgstr ""
 
-#: admin/themes.php:145
+#: admin/themes.php:147
 msgid "End Preview"
 msgstr "プレビューを終了する"
 
-#: admin/themes.php:147
+#: admin/themes.php:149
 msgid "Preview"
 msgstr "プレビュー"
 
@@ -5233,146 +5214,3 @@ msgid ""
 "You did not save the changes you made. \\nLeaving this page will result in "
 "the lose of data."
 msgstr ""
-
-#, php-format
-#~ msgid "Posted at %1$s"
-#~ msgstr "%1$sに投稿されました。"
-
-#~ msgid "There are currently no comments."
-#~ msgstr "現在コメントはありません。"
-
-#~ msgid "0 of 0"
-#~ msgstr "0件中0件"
-
-#~ msgid "Page:"
-#~ msgstr "ページ:"
-
-#~ msgid "Error!"
-#~ msgstr "エラー"
-
-#~ msgid "Edit Your Profile"
-#~ msgstr "プロフィールを編集"
-
-#~ msgid "Leave a Reply"
-#~ msgstr "コメントする"
-
-#~ msgid "Caffeine"
-#~ msgstr "カフェイン"
-
-#~ msgid "Sign in"
-#~ msgstr "サインイン"
-
-#~ msgid " posts"
-#~ msgstr " 投稿"
-
-#~ msgid " post"
-#~ msgstr " 投稿"
-
-#~ msgid "0-0 of 0"
-#~ msgstr "0-0 / 0"
-
-#~ msgid "You have logged in to Viddler."
-#~ msgstr "Viddlerにログインしました。"
-
-#, php-format
-#~ msgid "Comment Moderated on %s"
-#~ msgstr "%s のコメントをモデレートしました。"
-
-#~ msgid "The requested post was not found."
-#~ msgstr "要求されたページは見つかりません。"
-
-#, php-format
-#~ msgid "No results found for your search '%1$s'"
-#~ msgstr "'%1$s'に一致する検索結果は見つかりませんでした。"
-
-#, php-format
-#~ msgid ""
-#~ "Your <b>.htaccess</b> file is not writable. In order to secure your SQLite "
-#~ "database, please paste the following into <b>%s</b>:"
-#~ msgstr ""
-#~ "<b>.htaccess</b>に書き込み権限がありません。SQLiteデータベースをセキュアにするために次のテキストを "
-#~ "<b>%s</b>に加えてください:"
-
-#~ msgid "System Status"
-#~ msgstr "システムステータス"
-
-#~ msgid "The username and password you supplied failed to log in to Viddler."
-#~ msgstr "指定したユーザ名とパスワードでViddlerへのログインに失敗しました。"
-
-#, php-format
-#~ msgid "Search results for %s"
-#~ msgstr "%s の検索結果"
-
-#~ msgid "Add Item"
-#~ msgstr "アイテムを追加"
-
-#~ msgid "SYSTEM INFORMATION\n"
-#~ msgstr "システム情報\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "PLUGIN INFORMATION"
-#~ msgstr ""
-#~ "\n"
-#~ "プラグイン情報"
-
-#~ msgid ""
-#~ "\n"
-#~ "USER CLASSES\n"
-#~ msgstr ""
-#~ "\n"
-#~ "ユーザクラス\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "SITE INFORMATION\n"
-#~ msgstr ""
-#~ "\n"
-#~ "サイト情報\n"
-
-#~ msgid "Site Language"
-#~ msgstr "サイト言語"
-
-#, php-format
-#~ msgid "requires PHP 5.2 or newer. Your current PHP version is %s."
-#~ msgstr "PHP 5.2以上が必要です。現在のPHPバージョンは%sです。"
-
-#~ msgid ""
-#~ "<strong>Site Name</strong> is the name of your site as it will appear\n"
-#~ "\t\t\t\tto your visitors."
-#~ msgstr "<strong>サイト名</strong>は、閲覧者に表示するあなたのサイトの名前です。"
-
-#~ msgid "None found\n"
-#~ msgstr "見つかりませんでした。\n"
-
-#~ msgid " is powered by"
-#~ msgstr " is Powered by"
-
-#, php-format
-#~ msgid "by %s"
-#~ msgstr "%s 著"
-
-#, php-format
-#~ msgid "%d page"
-#~ msgid_plural "%d pages"
-#~ msgstr[0] "%d ページ"
-
-#, php-format
-#~ msgid "%d entry"
-#~ msgid_plural "%d entries"
-#~ msgstr[0] "%d 投稿"
-
-#, php-format
-#~ msgid "%d entry draft"
-#~ msgid_plural "%d entry drafts"
-#~ msgstr[0] "%d 件の投稿ドラフト"
-
-#, php-format
-#~ msgid "%d page draft"
-#~ msgid_plural "%d page drafts"
-#~ msgstr[0] "%d 件のページドラフト"
-
-#, php-format
-#~ msgid "%d spam comment awaiting moderation"
-#~ msgid_plural "%d spam comments awaiting moderation"
-#~ msgstr[0] "%d 件のモデレーション待ちスパムコメント"
